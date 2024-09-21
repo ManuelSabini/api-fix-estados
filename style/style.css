@@ -1,0 +1,27 @@
+
+body{
+    background-color: whitesmoke;
+}
+
+header{
+    background: #474554;
+    color: whitesmoke;
+}
+
+main{
+    padding: 10px;
+}
+div{
+    padding: 1px;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion{
+    border: rgb(179, 179, 179) solid 1px;
+    border-radius: 10px;
+    margin: 5px;
+}
