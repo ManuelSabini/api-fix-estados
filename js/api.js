@@ -33,5 +33,4 @@ function armarData(ddi, estado, fechaEstado, numeroRemito,numeroViaje,cantidadRe
     datos.linea = linea;
     datos.muelleCarga = muelleCarga;
     datos.validaTransicion = validaTransicion;
-/*     console.log(datos); */
 }

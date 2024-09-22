@@ -1,5 +1,6 @@
 log = {}
-
+/* localStorage.setItem("headers",'{"Content-Type": "application/json"}')
+ */
 function cargarValoresAnteriores(idFront,keyLocalSorage){
     valor = document.querySelector(`#${idFront}`);
     valor.value = localStorage.getItem(`${keyLocalSorage}`);
@@ -58,7 +59,7 @@ document.querySelector("#enviar").addEventListener('click', async(event)=>{
     envioEstado(
         capturaValoresJson("url"),
         capturaValoresJson("metodo"),
-        JSON.parse(capturaValoresJson("headers")),
+        capturaValoresJson("headers") ? JSON.parse(capturaValoresJson("headers")) : JSON.parse('{"Content-Type": "application/json"}'),
         datos
     );
 })
